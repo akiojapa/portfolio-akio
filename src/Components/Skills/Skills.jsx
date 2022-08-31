@@ -5,6 +5,8 @@ import python_logo from "../../assets/img/python-logo.webp";
 import java_logo from "../../assets/img/java-logo.svg";
 import logo_c from "../../assets/img/logo-c.svg";
 import react_logo from "../../assets/img/react-logo.png";
+import { DiPhp,DiPython,DiHtml5,DiCss3,DiJavascript,DiJava, DiBootstrap, DiReact } from "react-icons/di";
+import { IconContext } from 'react-icons';
 import Carousel from 'react-multi-carousel';
 import {CircularProgressbarWithChildren} from 'react-circular-progressbar'
 import 'react-multi-carousel/lib/styles.css';
@@ -16,6 +18,7 @@ const Skills = () => {
 
     const idCSS = "hello"
 
+    const tam_logo = "80px";
 
   const colorPHP =[
     {
@@ -117,7 +120,11 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={php_logo} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiPhp />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
                          <div style={{width: '50%', height: '50%', margin: 'auto', }}>
@@ -132,7 +139,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={90} 
+                         value={60} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#HTML)`, height:"100%"},
                          trail:{
@@ -140,7 +147,11 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={html_logo} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiPython />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
 
@@ -156,7 +167,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={55} 
+                         value={40} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#Python)`, height:"100%"},
                          trail:{
@@ -164,7 +175,11 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={python_logo} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiJava />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
                          
@@ -180,7 +195,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={40} 
+                         value={90} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#Java)`, height:"100%"},
                          trail:{
@@ -188,7 +203,11 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={java_logo} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiHtml5 />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
                          <div style={{width: '50%', height: '50%', margin: 'auto', }}>
@@ -203,7 +222,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={65} 
+                         value={50} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#ColorC)`, height:"100%"},
                          trail:{
@@ -211,7 +230,11 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={logo_c} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiCss3 />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
                          <div style={{width: '50%', height: '50%', margin: 'auto', }}>
@@ -226,7 +249,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={55} 
+                         value={70} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#React)`, height:"100%"},
                          trail:{
@@ -234,9 +257,69 @@ const Skills = () => {
                          }
                         }} 
                             className="item">
-                            <img src={react_logo} style={{width: 100, marginTop: -5, }}/>
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiJavascript />
+                            </div>
+                          </IconContext.Provider>
                          </CircularProgressbarWithChildren>
                          </div>
+                         <div style={{width: '50%', height: '50%', margin: 'auto', }}>
+                         {
+                            colorC.map((colors,index)=>{
+                              return (
+                                <GradientSVG 
+                                  key={index}
+                                  {...colors}
+                                />
+                              )
+                            })
+                          }
+                         <CircularProgressbarWithChildren 
+                         value={35} 
+                         strokeWidth={8}
+                         styles={{path: {stroke: `url(#ColorC)`, height:"100%"},
+                         trail:{
+                            stroke: "transparent"
+                         }
+                        }} 
+                            className="item">
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiReact />
+                            </div>
+                          </IconContext.Provider>
+                         </CircularProgressbarWithChildren>
+                         </div>
+                         <div style={{width: '50%', height: '50%', margin: 'auto', }}>
+                         {
+                            colorC.map((colors,index)=>{
+                              return (
+                                <GradientSVG 
+                                  key={index}
+                                  {...colors}
+                                />
+                              )
+                            })
+                          }
+                         <CircularProgressbarWithChildren 
+                         value={70} 
+                         strokeWidth={8}
+                         styles={{path: {stroke: `url(#ColorC)`, height:"100%"},
+                         trail:{
+                            stroke: "transparent"
+                         }
+                        }} 
+                            className="item">
+                          <IconContext.Provider value={{size: tam_logo}}>
+                            <div>
+                            <DiBootstrap />
+                            </div>
+                          </IconContext.Provider>
+                         </CircularProgressbarWithChildren>
+                         </div>
+                         
+                         
 
                         </Carousel>
                     </div>

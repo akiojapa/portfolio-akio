@@ -8,8 +8,8 @@ export const GradientSVG = ({id,cor1,cor2}) => {
     <svg style={{ height: 0 }}>
       <defs>
         <linearGradient id={id} gradientTransform={gradientTransform}>
-          <stop offset="16.29%" stopColor= {cor1}  />
-          <stop offset="85.56%" stopColor= {cor2} />
+          <stop offset="16.29%" stopColor= {"#4A2FBD"}  />
+          <stop offset="85.56%" stopColor= {"#AA367C"} />
         </linearGradient>
       </defs>
     </svg>
