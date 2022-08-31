@@ -56,7 +56,7 @@ const NavBar = () => {
                 <a href="https://github.com/akiojapa"><IoLogoGithub className='image' /></a>
                 <a href="mailto:akioandreimat@gmail.com"><IoMail className='image' /></a>
               </div>
-              <a href='/portfolio-akio/src/assets/Curriculum_AkioMatera.pdf' download><button className="vvd">Curriculum</button></a>
+              <a href='/src/assets/Curriculum_AkioMatera.pdf' download><button className="vvd">Curriculum</button></a>
             </span>
           </Navbar.Collapse>
         </Container>
