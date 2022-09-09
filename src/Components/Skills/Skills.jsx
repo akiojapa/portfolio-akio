@@ -167,7 +167,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={40} 
+                         value={75} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#Python)`, height:"100%"},
                          trail:{
@@ -276,7 +276,7 @@ const Skills = () => {
                             })
                           }
                          <CircularProgressbarWithChildren 
-                         value={35} 
+                         value={50} 
                          strokeWidth={8}
                          styles={{path: {stroke: `url(#ColorC)`, height:"100%"},
                          trail:{

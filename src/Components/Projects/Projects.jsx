@@ -7,7 +7,7 @@ import Tab from 'react-bootstrap/Tab';
 import { ProjectCard } from "./ProjectCard.jsx";
 import projImg1 from "../../assets/img/Lesson-project.png";
 import projImg2 from "../../assets/img/WalletControl-project.png";
-import projImg3 from "../../assets/img/Python-project.png";
+import projImg3 from "../../assets/img/React-Project.png";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 import './Projects.css';
 import '../NavBar/NavBar.css'
@@ -38,9 +38,10 @@ const Projects = () => {
     const projectPython = [
 
         {
-            title: "Checklist and Manage Franchise",
-            description: "An archive executable that make of automatic form the checklist about the problems of IES and later makes the count and put in the spreadsheet the data.",
+            title: "DS-meta",
+            description: "A fullstack website with React in Frontend calling an API created besides Java with framework SpringBoot.",
             imgUrl: projImg3,
+            link: "https://dsmeta-matera.netlify.app/"
         },
     ];
 
@@ -63,7 +64,7 @@ const Projects = () => {
                                                 <Nav.Link eventKey="second">HTML/CSS/JS</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="third">Python</Nav.Link>
+                                                <Nav.Link eventKey="third">React/Java-SpringBoot</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -106,7 +107,7 @@ const Projects = () => {
                                                         )
                                                     })
                                                 }
-                                                <p>In maintenance, that helpfuls the team for organize the demands of the day without worrying about that dependencies, utilizing the librarys playwright, pyautogui and PySimpleGUI. </p>
+                                                <p>The project DS-meta consists in a list of sales and your sellers wich can notify a person by SMS(Just in my phone for now). </p>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
